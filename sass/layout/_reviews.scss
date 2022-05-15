@@ -19,14 +19,32 @@
     color: #111518;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         font-size: 26px;
     }
 
     @media screen and (min-width: 1680px) {
-        margin-bottom: 40px;
         font-size: 46px;
     }
+}
+
+.reviews__thumb {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        padding-left: 50px;
+        padding-right: 80px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-left: 80px;
+        padding-right: 110px;
+    }
+}
+
+.reviews__img-box {
+    margin-right: 42px;
 }
 
 .reviews__subtitle {
@@ -94,3 +112,32 @@
 
 // CHANGE COLOR TO ACCENT COLOR
 // CHANGE SECTION-TITLE CLASS, use mixins
+
+.reviews__main-img {
+
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.reviews__vk {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.reviews__icon {
+    fill: #436EAB;
+}
+
+.reviews__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1680px) {
+        // width: 618px;
+    }
+}
