@@ -172,10 +172,11 @@ body {
 
     display: block;
     margin: 0 auto;
-    // margin-bottom: 24px;
+    margin-bottom: 20px;
 
-
-
+    @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+    }
 
 }
 
@@ -193,13 +194,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 1680px) {}
 }
 
 .reviews__member {
+    @media screen and (max-width: 767px) {
+        &+& {
+            margin-left: 12px;
+        }
+    }
+
     @media screen and (min-width: 768px) {
         &+& {
             margin-left: 32px;
@@ -213,7 +218,10 @@ body {
     }
 }
 
+
 .reviews__mobile {
+
+
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -222,7 +230,6 @@ body {
 .hide-on-mobile {
 
     @media screen and (max-width: 767px) {
-
         display: none;
     }
 
@@ -230,14 +237,41 @@ body {
 
 .arrow-prev {
     position: absolute;
-    top: 250px;
-    left: 0;
+
+    @media screen and (max-width: 767px) {
+        top: 20px;
+        left: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 160px;
+        left: 5px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        top: 160px;
+        left: -40px;
+    }
+
 }
 
 .arrow-next {
     position: absolute;
-    top: 250px;
-    right: 0;
+
+    @media screen and (max-width: 767px) {
+        top: 20px;
+        right: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 160px;
+        right: 5px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        top: 160px;
+        right: -40px;
+    }
 }
 
 
@@ -246,6 +280,8 @@ body {
 }
 
 .reviews__mobile-only {
+    position: relative;
+
     @media screen and (min-width: 767px) {
         display: none;
     }
