@@ -5,10 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
-            />
+
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,8 +22,24 @@
                     Feedback from graduates
                 </h2>
 
-                <div class="reviews__thumb">
-
+                <article class="reviews__article">
+                    <div class="hide-on-mobile">
+                        <svg
+                            class="reviews__btn-next arrow-prev"
+                            width="25" height="25">
+                            <use
+                                href="./images/reviews/reviews-icons.svg#icon-arrow1">
+                            </use>
+                        </svg>
+                        <svg
+                            class="reviews__btn-next
+                            arrow-next"
+                            width="25" height="25">
+                            <use
+                                href="./images/reviews/reviews-icons.svg#icon-arrow2">
+                            </use>
+                        </svg>
+                    </div>
                     <div class="reviews__img-box">
                         <picture>
                             <source
@@ -65,7 +78,23 @@
                     </div>
 
                     <div class="reviews__wrap">
-
+                        <div class="reviews__mobile">
+                            <svg
+                                class="reviews__btn-next arrow-prev"
+                                width="25" height="25">
+                                <use
+                                    href="./images/reviews/reviews-icons.svg#icon-arrow1">
+                                </use>
+                            </svg>
+                            <svg
+                                class="reviews__btn-next
+                                arrow-next"
+                                width="25" height="25">
+                                <use
+                                    href="./images/reviews/reviews-icons.svg#icon-arrow2">
+                                </use>
+                            </svg>
+                        </div>
                         <h3 class="reviews__subtitle">Tonya Kucherovskaya</h3>
                         <p class="reviews__descr">Graduated from 2015, National
                             University
@@ -92,10 +121,12 @@
                             <a class="read-more" href="">Read more</a>
                         </p>
                     </div>
-                </div>
-                <div class="swiper mySwiper">
-                    <ul class="reviews__list swiper-wrapper">
-                        <li class="reviews__member swiper-slide"> <a href="">
+                </article>
+
+
+                <div class="reviews__mobile-only">
+                    <ul class="reviews__list">
+                        <li class="reviews__member"> <a href="">
                                 <picture>
                                     <source
                                         srcset="./images/reviews/reviews-1photo-1x.jpg
@@ -117,7 +148,7 @@
                                         width="54">
                                 </picture>
                             </a></li>
-                        <li class="reviews__member swiper-slide"> <a href="">
+                        <li class="reviews__member"> <a href="">
                                 <picture>
                                     <source
                                         srcset="./images/reviews/reviews-2photo-1x.jpg
@@ -139,7 +170,7 @@
                                         width="54">
                                 </picture>
                             </a></li>
-                        <li class="reviews__member swiper-slide"> <a href="">
+                        <li class="reviews__member"> <a href="">
                                 <picture>
                                     <source
                                         srcset="./images/reviews/reviews-3photo-1x.jpg
@@ -161,116 +192,9 @@
                                         width="54">
                                 </picture>
                             </a></li>
-                        <li class="reviews__member swiper-slide"> <a href="">
-                                <picture>
-                                    <source
-                                        srcset="./images/reviews/reviews-4photo-1x.jpg
-                                        1x,
-                                        ./images/reviews/reviews-4photo-2x.jpg
-                                        2x"
-                                        media="(min-width: 768px)"
-                                        />
-                                    <source
-                                        srcset="./images/reviews/reviews-4photo-1x.jpg
-                                        1x,
-                                        ./images/reviews/reviews-4photo-2x.jpg
-                                        2x"
-                                        media="(max-width: 767px)"
-                                        />
-                                    <img class="reviews__main-img"
-                                        src="./images/reviews/reviews-4photo-1x.jpg"
-                                        alt="photo of a reviewer"
-                                        width="54">
-                                </picture>
-                            </a></li>
-                        <li class="reviews__member swiper-slide"> <a href="">
-                                <picture>
-                                    <source
-                                        srcset="./images/reviews/reviews-5photo-1x.jpg
-                                        1x,
-                                        ./images/reviews/reviews-5photo-2x.jpg
-                                        2x"
-                                        media="(min-width: 768px)"
-                                        />
-                                    <source
-                                        srcset="./images/reviews/reviews-5photo-1x.jpg
-                                        1x,
-                                        ./images/reviews/reviews-5photo-2x.jpg
-                                        2x"
-                                        media="(max-width: 767px)"
-                                        />
-                                    <img class="reviews__main-img"
-                                        src="./images/reviews/reviews-5photo-1x.jpg"
-                                        alt="photo of a reviewer"
-                                        width="54">
-                                </picture>
-                            </a></li>
-                        <li class="reviews__member swiper-slide"> <a href="">
-                                <picture>
-                                    <source
-                                        srcset="./images/reviews/reviews-6photo-1x.jpg
-                                        1x,
-                                        ./images/reviews/reviews-6photo-2x.jpg
-                                        2x"
-                                        media="(min-width: 768px)"
-                                        />
-                                    <source
-                                        srcset="./images/reviews/reviews-6photo-1x.jpg
-                                        1x,
-                                        ./images/reviews/reviews-6photo-2x.jpg
-                                        2x"
-                                        media="(max-width: 767px)"
-                                        />
-                                    <img class="reviews__main-img"
-                                        src="./images/reviews/reviews-6photo-1x.jpg"
-                                        alt="photo of a reviewer"
-                                        width="54">
-                                </picture>
-                            </a></li>
-                        <li class="reviews__member swiper-slide"> <a href="">
-                                <picture>
-                                    <source
-                                        srcset="./images/reviews/reviews-7photo-1x.jpg
-                                        1x,
-                                        ./images/reviews/reviews-7photo-2x.jpg
-                                        2x"
-                                        media="(min-width: 768px)"
-                                        />
-                                    <source
-                                        srcset="./images/reviews/reviews-7photo-1x.jpg
-                                        1x,
-                                        swiper-buttuse
-                                        ./images/reviews/reviews-7photo-2x.jpg
-                                        2x"
-                                        media="(max-width: 767px)"
-                                        />
-                                    <img class="reviews__main-img"
-                                        src="./images/reviews/reviews-7photo-1x.jpg"
-                                        alt="photo of a reviewer"
-                                        width="54">
-                                </picture>
-                            </a></li>
                     </ul>
-                    <div class="swiper-button-next">
-
-                    </div>
-                    <svg
-                        class="reviews__btn-next"
-                        width="25" height="25">
-                        <use
-                            href="./images/reviews/reviews-icons.svg#icon-arrow1">
-                        </use>
-                    </svg>
-                    <div class="swiper-button-prev">
-                    </div>
-                    <svg
-                        class="reviews__btn-next"
-                        width="25" height="25">
-                        <use
-                            href="./images/reviews/reviews-icons.svg#icon-arrow2">
-                        </use>
-                    </svg>
                 </div>
+
                 <div class="hide-on-mobile">
                     <ul class="reviews__list">
                         <li class="reviews__member"> <a href="">
@@ -435,53 +359,37 @@
 
 
 
-        <section class="registration">
-            <div class="container">
-                <h2 class="registration__title">
-                    Registration for a <span class="registration__accent">free</span>
-                    phone <span class="registration__accent">consultation</span>
+        <section class="contacts">
+            <div class="container contacts__container">
+                <h2 class="contacts__title">
+                    Registartion for a <span class="contacts__accent">free</span>
+                    phone <span class="contacts__accent">consultation</span>
                     on
                     the nuances of
                     English UPE
                 </h2>
-                <p class="registration__text">Leave a request for participation
+                <p class="contacts__text">Leave a request for participation
                     in a
-                    <span class="registration__accent">free lesson</span>.
+                    <span class="contacts__accent">free lesson</span>.
                     A consultant will contact you and answer your questions</p>
-                <form class="registration__form">
-                    <input class="registration__input"
-                        type="text" placeholder="Name*">
-                    <input class="registration__input"
-                        type="tel" placeholder="Phone*">
-                    <button class="registration__btn" type="submit">
+                <form class="contacts__form">
+                    <input class="contacts__input"
+                        type="text"
+                        placeholder="Name*"
+                        pattern="[А-Яа-я]*?\s[А-Яа-я]*?\s[А-Яа-я]*">
+                    <input class="contacts__input"
+                        type="tel" placeholder="Phone*"
+                        name="phone"
+                        pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                        minlength="13"
+                        maxlength="13"
+                        />
+                    <button class="contacts__btn" type="submit">
                         i want a free lesson
                     </button>
                 </form>
             </div>
         </section>
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-    //         var swiper = new Swiper(".mySwiper", {
-    //     slidesPerView: 3,
-    //     spaceBetween: 5,
-    //     centeredSlides: true,
-    //     pagination: {
-    //       el: ".swiper-pagination",
-    //       clickable: true,
-    //     },
-    //   });
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        centeredSlides: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        // loop: true,
-      });
-    </script>
+
     </body>
 </html>
